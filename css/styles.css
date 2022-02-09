@@ -1,0 +1,20 @@
+#navegator{
+    background-color: #DBE2EF !important;
+}
+body{
+    background-color: #F9F7F7 !important;
+}
+#foot{
+    background-color: #3F72AF;
+    color: #FFFFFF !important;
+}
+#MenuNavegacion{
+    margin-right: 75rem;
+    margin-left: 1rem;
+}
+#tlf{
+    text-align: left;
+}
+.icon{
+    color: #ffffff;
+  }
