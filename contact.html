@@ -1,27 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="Gerónimo Donaire Fernández" content="asir">
+
+    <!--Enlace de Boostrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 
+    <!--Fuente de Google (Lato Regular 400)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-    <title>Document</title>
-</head>
+    <!--Fuente de los emoticonos-->
+    <script src="https://kit.fontawesome.com/185826b180.js" crossorigin="anonymous"></script>
+
+    <title>Contacto</title>
+
 <body>
     <div id="header">
-        <div class="container-fluid">
+        <div class="container-fluid-expand">
             <!-- BARRA NAVEGACIÓN -->
             <div class="bg-light">
                 <!--Todo sobre el marco del header (color, borde...)-->
-                <nav
-                    class="navbar navbar-expand-lg navbar-light bg-light border-3 border-bottom border-primary rounded">
+                <nav class="navbar navbar-expand-lg navbar-light border-4 border-bottom border-primary rounded"
+                    id="navegator">
                     <div class="container-fluid">
                         <!--Inserccion del logo-->
-                        <a href="#" class="navbar-brand">
-                            <img src="/img/logo.png" alt="logo" tittle="logo">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="/img/logo.png" alt="logo">
                         </a>
                         <!--Para cuando sea "pequeño" salga a la derecha un boton-->
                         <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
@@ -30,25 +42,25 @@
                         </button>
                     </div>
                     <div id="MenuNavegacion" class="navbar navbar-expand-lg">
-                        <ul class="navbar-nav ms-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Introducción</a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-brand">
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="services.html">Services</a>
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contacto</a>
                             </li>
                             <!--Boton desplegable hacia abajo-->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="portfolio.html" role="button"
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">
-                                    Portfolio
+                                    Servicios
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="prices.html">Prices</a></li>
-                                    <li><a class="dropdown-item" href="languages.html">Languagues</a></li>
+                                    <li><a class="dropdown-item" href="prices.html">Precios</a></li>
+                                    <li><a class="dropdown-item" href="languages.html">Idiomas</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -62,5 +74,172 @@
             </div>
         </div>
     </div>
+    <div id="main">
+        <div class="contained-fluid text-md-left mt-5 mx-3">
+            <h1>Métodos de contacto</h1>
+            <p>Me puedes contactar de múltiples formas:
+            <ul id="contacto">
+                <li>Mediante correo electrónico:
+                    <a href="mailto:geroturaniana@gmail.com">
+                        geroturaniana@gmail.com
+                    </a><i class="fas fa-home"></i>
+                </li>
+                <li>
+                    Mediante teléfono: +34 665 551 573 <i class="fas fa-phone"></i>
+                </li>
+                <li>
+                    Puedes contactarme por discord y por ahí tener una conversación más estrecha y fluida e incluso
+                    una
+                    llamada con cámara.
+                    <br />
+                    Nombre de usuario <strong>Gero</strong> e id <strong> #3130</strong> <i
+                        class="fa-brands fa-discord"></i>
+                </li>
+                <li>
+                    Si estas interesado en algún servicio, puedes rellenar el siguiente formulario y yo me pondré en
+                    contacto en
+                    un periodo de <b>una semana</b> como muy tarde.
+                </li>
+            </ul>
+            </p>
+            <!--Se enviaria el formulario al archivo insertaContacto.php que estaria conectado con la base de datos pero como no lo hemos dado...-->
+            <form action="insertaContacto.php" method="post">
+                <div class="datosPersonales row g-3">
+                    <h5><u>Datos Personales</u></h5>
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre (*)</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" value="" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellidos" class="form-label">Apellidos (*)</label>
+                        <input type="text" class="form-control" id="apellidos" name="apellidos" value="" required>
+                    </div>
+                    <div class="col-md-8">
+                        <label for="email" class="form-label">Email (*)</label>
+                        <input type="email" class="form-control" id="email" name="email" value="" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="numeroTelefono" class="form-label">Phone (*)</label>
+                        <input type="text" class="form-control" id="numeroTelefono" value="" name="numeroTelefono"
+                            placeholder="+34 (665 551 573)" required>
+                    </div>
+                </div>
+                <div class="intereses row g-3">
+                    <h5 class="mt-4"><u>Intereses</u></h5>
+                    <div class="col-md-12">
+                        <label for="consulta" class="form-label">Explique brevemente el motivo de su consulta
+                        </label>
+                        <textarea class="form-control" id="consulta" rows="3" redquired></textarea>
+                    </div>
+                    <!--Hay problemas para ver lo de (puede elegir una ó más de una) en los dos dispositivos mas pequeños -->
+                    <div class="col-md-12">
+                        <label for="motivoConsulta" class="form-label">Elija una opción tras haber explicado previamente
+                            el motivo de su consulta (*)</label>
+                        <select class="form-select" multiple required>
+                            <option selected="selected">Elegir la opción que desea contratar (puede elegir una ó más de una)
+                            </option>
+                            <option value="servicioTecnico">Presumuesto para un servicio técnico</option>
+                            <option value="mantenimientoWeb">Presumuesto para un servicio mantenimiento web</option>
+                            <option value="mantenimientoRed">Presumuesto para un servicio mantenimiento redes</option>
+                            <option value="paginaWeb">Presumuesto para diseño de una página web</option>
+                            <option value="montajeRed">Presumuesto para montaje de una red</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary btn">Enviar</button>
+                            <button type="reset" class="btn btn-primary ms-5 btn">Reset</button>
+                        </div>
+                    </div>
+                    </ç>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer class="bg-light pt-5 pb-4">
+        <div class="container-fluid text-center text-md-left" id="foot">
+            <div class="row text-center text-md-left">
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mt-3 mx-auto">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
+                    <p id="direccion">
+                        <i class="fas fa-home"></i> Roquetas de mar, Almería
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i> geroturaniana@gmail.com
+                    </p>
+                    <p id="tlf">
+                        <i class="fas fa-phone"></i> +34 665 551 573
+                    </p>
+                    <p id="discord">
+                        <i class="fa-brands fa-discord"></i> Gero #3130
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">¿Quién soy?</h5>
+                    <p id="quien_soy">
+                        Me llamo Gerónimo, actualmente estudio un módulo de grado superior ASIR en el IES Turaniana.
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Página QR</h5>
+                    <p>
+                        <a href="javascript:window.open('http://127.0.0.1:5500/index.html','','toolbar=yes');void 0"><img
+                                src="img/qrcode_chrome.png" width="250" alt="QR">
+                        </a>
+                    <p>
+
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Localización</h5>
+                    <p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51152.433596629155!2d-2.6569391499851838!3d36.74592059634113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd70701c1ac6a79f%3A0xf7091f15d97f0d61!2s04740%20Roquetas%20de%20Mar%2C%20Almer%C3%ADa!5e0!3m2!1ses!2ses!4v1644419024057!5m2!1ses!2ses"
+                            width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </p>
+                </div>
+                <hr class="mb-4 text-warning">
+                <div class="row aling-items-center footer">
+                    <div class="col-md-7 col-lg-8">
+                        <p>Copyright © 2022 All rights reserved by:
+                            <a href="#" style="text-decoration: none;">
+                                <strong class="text-warning">Gerónimo Donaire</strong>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="mailto:geroturaniana@gmail.com" class="btn-floating btn-sm"
+                                        style="font-size: 23px;">
+                                        <i class="fa fa-google icon">
+                                        </i></a>
+                                <li class="list-inline-item">
+                                    <a href="www.linkedin.com/in/geronimo-donaire" target="_blank"
+                                        class="btn-floating btn-sm" style="font-size: 23px;">
+                                        <i class="fa fa-linkedin icon">
+                                        </i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.youtube.com/channel/UCP3YqyZOGTxZdOhePAGijLg" target="_blank"
+                                        class="btn-floating btn-sm" style="font-size: 23px;">
+                                        <i class="fa fa-youtube icon">
+                                        </i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Para el boton desplegable de la derecha del menu-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
