@@ -1,46 +1,45 @@
 /*Parte del header*/
 #navegator {
-    background-color: #dbe2ef !important;
+  background-color: #dbe2ef !important;
 }
-
+/*Es para cuando se use en dispositivos no se descuadre*/
 #MenuNavegacion {
-    margin-right: 75rem;
-    margin-left: 1rem;
+  margin-right: 75rem;
+  margin-left: 1rem;
 }
-
 body {
-    background-color: #f9f7f7 !important;
-    /*Fuente de Google*/
-    font-family: "Lato", sans-serif;
+  background-color: #f9f7f7 !important;
+  /*Fuente de Google*/
+  font-family: "Lato", sans-serif;
 }
-
 /*Parte del footer*/
 #foot {
-    background-color: #3f72af;
-    color: #ffffff !important;
+  background-color: #3f72af;
+  color: #ffffff !important;
+  margin-right: 0% !important;
 }
 
 #direccion {
-    margin-right: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 #tlf {
-    margin-right: 4.3rem;
+  margin-right: 4.3rem;
 }
 
 #discord {
-    margin-right: 6.5rem;
+  margin-right: 6.5rem;
 }
 
 #quien_soy {
-    text-align: left;
+  text-align: left;
 }
 
 .icon {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /*Archivo contacto*/
 #contacto {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
