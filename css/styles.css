@@ -43,3 +43,26 @@ body {
 #contacto {
   margin-left: 1rem;
 }
+/*Archivo Portfolio*/
+#proyectosPort{
+  background-color:#ebebeb;
+  border-radius: 0.5rem;
+  padding-bottom: 1rem;
+
+}
+.botonesWebs{
+  color:#ffffff;
+  text-decoration: none;
+}
+.botonesWebs > a:link{
+  color:#ffffff !important;
+  text-decoration: none;
+}
+.botonesWebs > a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.botonesWebs > a:active {
+  color: #ffffff;
+  text-decoration: none;  
+}
