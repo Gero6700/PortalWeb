@@ -46,13 +46,13 @@
 
 <body>
     <div id="header">
-        <div class="container-fluid-expand">
+        <div class="container-fluid-extend">
             <!-- BARRA NAVEGACIÓN -->
             <div class="bg-light">
                 <!--Todo sobre el marco del header (color, borde...)-->
                 <nav class="navbar navbar-expand-lg navbar-light border-4 border-bottom border-primary rounded"
                     id="navegator">
-                    <div class="container-fluid">
+                    <div class="container-fluid-extend">
                         <!--Inserccion del logo-->
                         <a href="index.html" class="navbar-brand">
                             <img src="img/logo.png" alt="logo">
@@ -79,9 +79,12 @@
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                                     Servicios
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="prices.html">Precios</a></li>
-                                    <li><a class="dropdown-item" href="languages.html">Idiomas</a></li>
+                                <ul class="dropdown-menu" id="navegator">
+                                    <li><a class="dropdown-item" href="services/webDesign.html">Diseño Web</a></li>
+
+                                    <li><a class="dropdown-item" href="services/computerNetworks.html">Instalación de redes</a></li>
+
+                                    <li><a class="dropdown-item" href="services/technicalSupport.html">Servicio Técnico</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -106,50 +109,59 @@
                 </div>
             </div>
         </section>
-            <div class="container" id="proyectosPort">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                           <img src="img/PCComponentes.png" alt="Web Pccomponentes">
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Hace 3 años trabajé con el grupo de PCComponentes, una de las empresas más importantes en el sector de compra de Informática desarrollando su página web. Además una vez desarrollada la web, viendo mis resultados y mis estudios decidieron incluirme en la parte de desarrollo de redes e infraestructura.
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-primary btn-outline-secondary text-decoration-secondary botonesWebs"><a href="https://www.pccomponentes.com/" target="_blank">Web de soporte de Pccomponentes</a></button>
-                                    </div>
+        <div class="container" id="proyectosPort">
+            <div class="row row-cols-1 row-cols-sm-3 row-cols-md-2 g-4 mx-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/PCComponentes.png" alt="Web Pccomponentes">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Hace 3 años colaboré con el grupo de desarrolladores de PCComponentes, una de las
+                                empresas más importantes
+                                en el sector de compra de Informática. Además una vez
+                                desarrollada la web, viendo mis resultados y mis estudios decidieron incluirme en la
+                                parte de desarrollo de redes e infraestructura.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button"
+                                        class="btn btn-primary btn-outline-secondary text-decoration-secondary botonesWebs"><a
+                                            href="https://www.pccomponentes.com/" target="_blank">Web de soporte de
+                                            Pccomponentes</a></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="album py-5 bg-light">
-        <div class="container" id="proyectosPort">
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                     <div class="card shadow-sm">
                         <img src="img/servicioTecnicoAmazon.png" alt="Servicio Tecnico Amazon">
                         <div class="card-body">
                             <p class="card-text">
-                                Hace solamente unos meses colaboré con el equipo de Amazon España para ayudar a implementar nuevas herramientas a la hora de ayudar al cliente, prestando mi servicio como soporte técnico online. Usando herramientas como TeamViewer, Extensión de Chrome Remote Desktop entre otras muchas.
+                                Hace solamente unos meses colaboré con el equipo de Amazon España para ayudar a
+                                implementar nuevas herramientas a la hora de ayudar al cliente, prestando mi servicio
+                                como soporte técnico online. Usando herramientas como TeamViewer, Extensión de Chrome
+                                Remote Desktop entre otras muchas.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-primary btn-outline-secondary text-decoration-secondary botonesWebs"><a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=GSD587LKW72HKU2V" target="_blank">Web de soporte de Amazon</a></button>
+                                    <button type="button"
+                                        class="btn btn-primary btn-outline-secondary text-decoration-secondary botonesWebs"><a
+                                            href="https://www.amazon.es/gp/help/customer/display.html?nodeId=GSD587LKW72HKU2V"
+                                            target="_blank">Web de soporte de Amazon</a></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
+
     </div>
+
     </div>
+
     </div>
     <footer class="bg-light pt-5">
         <div class="container-fluid text-center text-md-left" id="foot">

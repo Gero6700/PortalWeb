@@ -43,19 +43,27 @@ body {
 #contacto {
   margin-left: 1rem;
 }
-/*Archivo Portfolio*/
-#proyectosPort{
-  background-color:#ebebeb;
-  border-radius: 0.5rem;
-  padding-bottom: 1rem;
+#selector{
+  background-color: #f1f0f0 !important;
+}
+h4{
+  padding-left: 1rem !important;
+  padding-top: 1rem !important;
 
 }
-.botonesWebs{
-  color:#ffffff;
+/*Archivo Portfolio*/
+#proyectosPort {
+  background-color: #ebebeb;
+  border-radius: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.botonesWebs {
+  color: #ffffff;
   text-decoration: none;
 }
-.botonesWebs > a:link{
-  color:#ffffff !important;
+.botonesWebs > a:link {
+  color: #ffffff !important;
   text-decoration: none;
 }
 .botonesWebs > a:visited {
@@ -64,5 +72,44 @@ body {
 }
 .botonesWebs > a:active {
   color: #ffffff;
-  text-decoration: none;  
+  text-decoration: none;
 }
+.card-text {
+  height: 8rem;
+  padding: 0.5rem;
+}
+/*Servicios
+  -Diseño Web
+*/
+#mainDesingWeb{
+  background-color: #B8B5FF;
+  border-radius: 1rem;
+}
+.servicios{
+  background-color: #E4FBFF;
+}
+#esloganWeb{
+  color: blue;
+}
+.servicios {
+  text-align: left !important;
+}
+.imgServices > img{
+height: 25rem;
+width: 100%;
+padding-right: 1rem;
+}
+/*
+ * Extra utilities
+ * Su funcion es extender el main al ancho de pantalla
+ */
+ .flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+

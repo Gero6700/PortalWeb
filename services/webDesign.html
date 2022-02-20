@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Gerónimo Donaire Fernández" content="asir">
+
+    <!--Favicon(Emote de la pestaña)-->
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Enlace de Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Css mio-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--Fuente de Google (Lato Regular 400)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!--Fuente de los emoticonos-->
+    <script src="https://kit.fontawesome.com/185826b180.js" crossorigin="anonymous"></script>
+
+    <title>Servicios</title>
+
+<body>
+
+    <div id="header">
+        <div class="container-fluid-extend">
+            <!-- BARRA NAVEGACIÓN -->
+            <div class="bg-light">
+                <!--Todo sobre el marco del header (color, borde...)-->
+                <nav class="navbar navbar-expand-lg navbar-light border-4 border-bottom border-primary rounded"
+                    id="navegator">
+                    <div class="container-fluid-extend">
+                        <!--Inserccion del logo-->
+                        <a href="index.html" class="navbar-brand">
+                            <img src="../img/logo.png" alt="logo">
+                        </a>
+                        <!--Para cuando sea "pequeño" salga a la derecha un boton-->
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#MenuNavegacion">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div id="MenuNavegacion" class="navbar navbar-expand-lg">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-brand">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../contact.html">Contacto</a>
+                            </li>
+                            <!--Boton desplegable hacia abajo-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                    data-bs-toggle="dropdown">
+                                    Servicios
+                                </a>
+                                <ul class="dropdown-menu" id="navegator">
+                                    <li><a class="dropdown-item" href="../services/webDesign.html">Diseño Web</a></li>
+
+                                    <li><a class="dropdown-item" href="../services/computerNetworks.html">Instalación de
+                                            Redes</a></li>
+
+                                    <li><a class="dropdown-item" href="../services/technicalSupport.html">Servicio
+                                            Técnico</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-nowrap"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+            <div class="col-md-5 p-lg-5 mx-auto" id="mainDesingWeb">
+                <h1 class="display-5 fw-normal">Diseño y Mantenimiento Web</h1>
+            </div>
+        </div>
+    </div>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden servicios">
+            <div class="my-4 py-3">
+                <h2 class="display-4">Diseño Web</h2>
+                <p>La función principal es acompañar al cliente en todo momento, con el registro o translado de dominio,
+                    diseño y programación web, posicionamiento en buscadores etc.
+
+                    <br />
+
+                    Hay que destacar mi trato con el cliente que siempre es cercano, para así llegar a saber mejor que
+                    quiere el mismo concretamente. Además cuido especialmente el <strong>buen diseño</strong>, la
+                    <strong>funcionalidad</strong>, la <strong>optimización correcta</strong> para las búsquedas entre
+                    otras grandes cualidades.
+                </p>
+                <!--Para darle efecto de citacion-->
+                <figcaption class="blockquote-footer" id="esloganWeb">
+                    Soluciones simples a problemas complejos.
+                </figcaption>
+            </div>
+        </div>
+        <div class="imgServices">
+            <img src="../img/diseñoWeb.jpg">
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+
+        <div class="imgServices">
+            <img src="../img/host.jpg">
+        </div>
+
+        <div class=" me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden servicios">
+            <div class="my-3 py-3">
+                <h2 class="display-4">Dominios y hospedaje</h2>
+                <p>Tramito registros de dominios y hospedajes, ofreción una completa gama de opciones y soluciones.
+                    Acompañado de asesoramiento y soporte personalizado con el cliente.</p>
+                <figcaption class="blockquote-footer" id="esloganWeb">
+                    Con rapidez. Con decisión. Con entusiasmo.
+                </figcaption>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden servicios">
+            <div class="my-4 py-3">
+                <h2 class="display-4">Mantenimiento de servidores web</h2>
+                <p>El servicio de mantenimiento de servidores es la mejor manera de mantener siempre tu página
+                    actualizada con las últimas tecnologías para que sea estable, rápida y segura.</p>
+                <ul>
+                    <li>Copias de archivos y base de datos, para evitar pérdidas de información</li>
+                    <li>Revisión de plugins y revisión de conflictos</li>
+                </ul>
+                <br />
+                <figcaption class="blockquote-footer" id="esloganWeb">
+                    Cambios para mejor.
+                </figcaption>
+            </div>
+        </div>
+        <div class="imgServices">
+            <img src="../img/mantenimientoServidores.jpg">
+        </div>
+    </div>
+    <footer class="bg-light pt-5">
+        <div class="container-fluid text-center text-md-left" id="foot">
+            <div class="row text-center text-md-left">
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mt-3 mx-auto">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
+                    <p id="direccion">
+                        <i class="fas fa-home"></i> Roquetas de mar, Almería
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i> geroturaniana@gmail.com
+                    </p>
+                    <p id="tlf">
+                        <i class="fas fa-phone"></i> +34 665 551 573
+                    </p>
+                    <p id="discord">
+                        <i class="fa-brands fa-discord"></i> Gero #3130
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">¿Quién soy?</h5>
+                    <p id="quien_soy">
+                        Me llamo Gerónimo, actualmente estudio un módulo de grado superior ASIR en el IES Turaniana.
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Localización</h5>
+                    <p>
+                        <!--Hay que tener cuidado con los tamanios-->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51152.433596629155!2d-2.6569391499851838!3d36.74592059634113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd70701c1ac6a79f%3A0xf7091f15d97f0d61!2s04740%20Roquetas%20de%20Mar%2C%20Almer%C3%ADa!5e0!3m2!1ses!2ses!4v1644419024057!5m2!1ses!2ses"
+                            width="60%" height="175rem" style="border-radius: 1rem;" allowfullscreen=""
+                            loading="lazy"></iframe>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">QR DE LA PÁGINA</h5>
+                    <p>
+                        <!--Hay que tener cuidado con los tamanios-->
+                        <a
+                            href="javascript:window.open('https://gero6700.github.io/portalWeb/','','toolbar=yes');void 0"><img
+                                src="../img/qrcode_page.png" width="40%" alt="QR" style="border-radius: 1rem;">
+                        </a>
+                    <p>
+
+                </div>
+                <hr class="mb-4 text-warning">
+                <div class="row aling-items-center footer">
+                    <div class="col-md-7 col-lg-8">
+                        <p>Copyright © 2022 All rights reserved by:
+                            <a href="#" style="text-decoration: none;">
+                                <strong class="text-warning">Gerónimo Donaire</strong>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="mailto:geroturaniana@gmail.com" class="btn-floating btn-sm"
+                                        style="font-size: 23px;">
+                                        <i class="fa fa-google icon">
+                                        </i></a>
+                                <li class="list-inline-item">
+                                    <a href="www.linkedin.com/in/geronimo-donaire" target="_blank"
+                                        class="btn-floating btn-sm" style="font-size: 23px;">
+                                        <i class="fa fa-linkedin icon">
+                                        </i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.youtube.com/channel/UCP3YqyZOGTxZdOhePAGijLg" target="_blank"
+                                        class="btn-floating btn-sm" style="font-size: 23px;">
+                                        <i class="fa fa-youtube icon">
+                                        </i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Para el boton desplegable de la derecha del menu-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
