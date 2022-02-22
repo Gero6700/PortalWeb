@@ -27,7 +27,8 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!--Enlace de Boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Css mio-->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -48,12 +49,12 @@
             <!-- BARRA NAVEGACIÓN -->
             <div class="bg-light">
                 <!--Todo sobre el marco del header (color, borde...)-->
-                <nav class="navbar navbar-expand-lg navbar-light border-4 border-bottom border-primary rounded"
-                    id="navegator">
+                <nav
+                    class="navbar navbar-expand-lg navbar-light border-4 border-bottom border-primary rounded navegator">
                     <div class="container-fluid-extend">
                         <!--Inserccion del logo-->
-                        <a href="index.html" class="navbar-brand">
-                            <img src="img/logo.png" alt="logo">
+                        <a href="../index.html" class="navbar-brand">
+                            <img src="../img/logo.png" alt="logo">
                         </a>
                         <!--Para cuando sea "pequeño" salga a la derecha un boton-->
                         <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
@@ -64,25 +65,28 @@
                     <div id="MenuNavegacion" class="navbar navbar-expand-lg">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-brand">
                             <li class="nav-item ">
-                                <a class="nav-link active" href="index.html">Home</a>
+                                <a class="nav-link" href="../index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                <a class="nav-link" href="../portfolio.html">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contacto</a>
+                                <a class="nav-link" href="../contact.html">Contacto</a>
                             </li>
                             <!--Boton desplegable hacia abajo-->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" role="button"
+                                    data-bs-toggle="dropdown">
                                     Servicios
                                 </a>
-                                <ul class="dropdown-menu" id="navegator">
-                                    <li><a class="dropdown-item" href="services/webDesign.html">Diseño Web</a></li>
+                                <ul class="dropdown-menu navegator">
+                                    <li><a class="dropdown-item" href="../services/webDesign.html">Diseño Web</a></li>
 
-                                    <li><a class="dropdown-item" href="services/computerNetworks.html">Instalación de redes</a></li>
+                                    <li><a class="dropdown-item" href="../services/computerNetworks.html">Instalación de
+                                            Redes</a></li>
 
-                                    <li><a class="dropdown-item" href="services/technicalSupport.html">Servicio Técnico</a></li>
+                                    <li><a class="dropdown-item" href="../services/technicalSupport.html">Servicio
+                                            Técnico</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -97,23 +101,65 @@
         </div>
     </div>
     <div id="main">
-        <div class="text-md-left mt-5 mx-3">
-            <h3>Main</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ea
-                blanditiis quas tempora, libero vero
-                fugit dignissimos nihil? Ipsum tempora obcaecati optio consectetur cum enim
-                voluptate aut libero sint
-                delectus? Illum quas illo repellendus natus asperiores. Quam quod velit
-                facere ea aut maxime porro cumque
-                optio natus neque nemo aspernatur ratione, debitis, eveniet corporis eum
-                modi dolore laudantium. Illum
-                architecto placeat reiciendis iusto? Vitae laboriosam vel qui, eligendi
-                assumenda aut saepe nesciunt
-                dignissimos tempore eius voluptatem odit cum culpa reiciendis earum sint
-                excepturi quidem impedit iure.
-                Cumque, itaque fuga voluptatem, recusandae, modi consectetur tenetur
-                laboriosam quidem officiis quas eius
-                molestias.</p>
+        <div class="text-md-left mt-5 mx-3 presentacion">
+            <div class="presentacion-contenido">
+                <h1>En primer lugar me presento, <strong>Gerónimo Donaire Fernández</strong></h1>
+                <p>Soy una persona ambiciosa, que le gusta los retos. Destacar mi productividad a la hora de afrontar los problemas que le surjan, además trabajo muy bien en grupo.</p>
+            </div>
+            <img src="img/gigachat.png" alt="Imagen mia" id="imagenMia">
+        </div>
+        <div class="tabla-horario">
+            <table class="tabla sombra">
+                <thead>
+                    <tr>
+                        <td colspan="6" id="caption">
+                            Horario Trabajo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Lun</th>
+                        <th>Mar</th>
+                        <th>Mié</th>
+                        <th>Jue</th>
+                        <th>Vie</th>
+        
+                    </tr>
+        
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td class="horas">8:30 a 10:30 </td>
+                        <td class="SoporteOnline">Soporte Técnico Online</td>
+                        <td class="MatenimientoWeb">Matenimiento Web</td>
+                        <td class="Consultoria"> Consultoria</td>
+                        <td class="SaneamientoDeRedes">Saneamiento de Redes</td>
+                        <td class="DesarrolloWeb">Desarrollo Web</td>
+        
+                    </tr>
+                
+                    <tr>
+                        <td class="horas">10:30 a 12:30 </td>
+                        <td class="DesarrolloWeb">Desarrollo Web</td>
+                        <td class="SaneamientoDeRedes">Saneamiento de Redes</td>
+                        <td class="SoportePresencial">Soporte Técnico Presencial</td>
+                        <td class="Descanso">Descanso</td>
+                        <td class="Descanso">Descanso</td>
+                    </tr>
+                    <tr>
+                        <td class="horas">12:30 a 2:00</td>
+                        <td class="RevisarEmail">Revisar y contestar Email</td>
+                        <td class="RevisarEmail">Revisar y contestar Email</td>
+                        <td class="RevisarEmail">Revisar y contestar Email</td>
+                        <td class="Gym">GYM</td>
+                        <td class="RevisarEmail">Revisar y contestar Email</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -148,15 +194,17 @@
                         <!--Hay que tener cuidado con los tamanios-->
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51152.433596629155!2d-2.6569391499851838!3d36.74592059634113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd70701c1ac6a79f%3A0xf7091f15d97f0d61!2s04740%20Roquetas%20de%20Mar%2C%20Almer%C3%ADa!5e0!3m2!1ses!2ses!4v1644419024057!5m2!1ses!2ses"
-                            width="60%" height="175rem" style="border-radius: 1rem;" allowfullscreen="" loading="lazy"></iframe>
+                            width="300rem" height="175rem" style="border-radius: 1rem;" allowfullscreen=""
+                            loading="lazy"></iframe>
                     </p>
                 </div>
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">QR DE LA PÁGINA</h5>
                     <p>
                         <!--Hay que tener cuidado con los tamanios-->
-                        <a href="javascript:window.open('http://127.0.0.1:5500/index.html','','toolbar=yes');void 0"><img
-                                src="img/qrcode_page.png" width="40%" alt="QR" style="border-radius: 1rem;">
+                        <a
+                            href="javascript:window.open('https://gero6700.github.io/portalWeb/','','toolbar=yes');void 0"><img
+                                src="../img/qrcode_page.png" width="175rem" alt="QR" style="border-radius: 1rem;">
                         </a>
                     <p>
 
@@ -164,10 +212,16 @@
                 <hr class="mb-4 text-warning">
                 <div class="row aling-items-center footer">
                     <div class="col-md-7 col-lg-8">
-                        <p>Copyright © 2022 All rights reserved by:
-                            <a href="#" style="text-decoration: none;">
-                                <strong class="text-warning">Gerónimo Donaire</strong>
+                        <p>
+                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                                id="licencia">Licencia Creative Commons Atribución-NoComercial-Compartir Igual 4.0
+                                Internacional</a>
+                            <strong class="text-warning">Gerónimo Donaire</strong>
+                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+                                    alt="Licencia Creative Commons" style="border-width:0"
+                                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
                             </a>
+                            <br />
                         </p>
                     </div>
                     <div class="col-md-5 col-lg-4">
@@ -179,7 +233,7 @@
                                         <i class="fa fa-google icon">
                                         </i></a>
                                 <li class="list-inline-item">
-                                    <a href="www.linkedin.com/in/geronimo-donaire" target="_blank"
+                                    <a href="https://www.linkedin.com/in/geronimo-donaire" target="_blank"
                                         class="btn-floating btn-sm" style="font-size: 23px;">
                                         <i class="fa fa-linkedin icon">
                                         </i></a>
