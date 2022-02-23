@@ -167,20 +167,31 @@ td {
 .horas {
   background-color: #ffbc7d;
 }
-.sombra {
+.sombraTabla {
   cursor: pointer;
   text-decoration: none;
   color: rgb(0, 0, 0);
   transition: 0.4s;
-  box-shadow: 1rem 0.5rem 1rem #ffbc7d;
+  box-shadow: 0rem 0.5rem 1rem #ffbc7d;
   transition: all 500ms ease-out;
+  padding:0;
+
 }
-.sombra:hover {
+.sombraTabla:hover {
   transform: translateY(-3%);
 }
-.table{
-  overflow-x: auto !important;
+.sombraVideo {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  transition: 0.4s;
+  box-shadow: 0rem 2rem 3rem #030303;
+  transition: all 500ms ease-out;
+  padding:0;
 }
+.sombraVideo:hover {
+  transform: translateY(3%);
+}
+
 #imagenMia{
   padding-bottom: 1rem;
 }
