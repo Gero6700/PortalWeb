@@ -178,6 +178,9 @@ td {
 .sombra:hover {
   transform: translateY(-3%);
 }
+.table{
+  overflow-x: auto !important;
+}
 #imagenMia{
   padding-bottom: 1rem;
 }
