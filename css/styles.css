@@ -179,6 +179,5 @@ td {
   transform: translateY(-3%);
 }
 #imagenMia{
-  width: 30rem;
-  height: 30rem;
+  padding-bottom: 1rem;
 }
