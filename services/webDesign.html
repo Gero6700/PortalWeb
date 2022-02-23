@@ -49,20 +49,21 @@
             <!-- BARRA NAVEGACIÓN -->
             <div class="bg-light">
                 <!--Todo sobre el marco del header (color, borde...)-->
-                <nav class="navbar navbar-expand-lg navbar-light border-4 border-bottom border-primary rounded navegator">
-                    <div class="container-fluid-extend">
+                <nav
+                    class="navbar navbar-expand-lg navbar-light border-4 border-bottom border-primary rounded navegator">
+                    <div class="container-fluid">
                         <!--Inserccion del logo-->
                         <a href="../index.html" class="navbar-brand">
                             <img src="../img/logo.png" alt="logo">
                         </a>
                         <!--Para cuando sea "pequeño" salga a la derecha un boton-->
-                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        <button type="button" class="navbar-toggler " data-bs-toggle="collapse"
                             data-bs-target="#MenuNavegacion">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
                     <div id="MenuNavegacion" class="navbar navbar-expand-lg">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-brand">
+                        <ul class="navbar-nav me-5 mb-2 mb-lg-0 navbar-brand">
                             <li class="nav-item ">
                                 <a class="nav-link" href="../index.html">Home</a>
                             </li>
@@ -74,17 +75,16 @@
                             </li>
                             <!--Boton desplegable hacia abajo-->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" role="button"
-                                    data-bs-toggle="dropdown">
+                                <a class="nav-link dropdown-toggle active" active href="#" role="button" data-bs-toggle="dropdown">
                                     Servicios
                                 </a>
                                 <ul class="dropdown-menu navegator">
-                                    <li><a class="dropdown-item" href="../services/webDesign.html">Diseño Web</a></li>
+                                    <li><a class="dropdown-item" href="webDesign.html">Diseño Web</a></li>
 
-                                    <li><a class="dropdown-item" href="../services/computerNetworks.html">Instalación de
+                                    <li><a class="dropdown-item" href="computerNetworks.html">Instalación de
                                             Redes</a></li>
 
-                                    <li><a class="dropdown-item" href="../services/technicalSupport.html">Servicio
+                                    <li><a class="dropdown-item" href="technicalSupport.html">Servicio
                                             Técnico</a></li>
                                 </ul>
                             </li>
@@ -104,70 +104,74 @@
             <div class="col-md-5 p-lg-5 mx-auto" id="mainDesingWeb">
                 <h1 class="display-5 fw-normal">Diseño y Mantenimiento Web</h1>
             </div>
-        </div>
-    </div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden servicios">
-            <div class="my-4 py-3">
-                <h2 class="display-4">Diseño Web</h2>
-                <p>La función principal es acompañar al cliente en todo momento, con el registro o translado de dominio,
-                    diseño y programación web, posicionamiento en buscadores etc.
 
+        </div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+            <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden servicios">
+                <div class="my-4 py-3">
+                    <h2 class="display-4">Diseño Web</h2>
+                    <p>La función principal es acompañar al cliente en todo momento, con el registro o translado de
+                        dominio,
+                        diseño y programación web, posicionamiento en buscadores etc.
+
+                        <br />
+
+                        Hay que destacar mi trato con el cliente que siempre es cercano, para así llegar a saber mejor
+                        que
+                        quiere el mismo concretamente. Además cuido especialmente el <strong>buen diseño</strong>, la
+                        <strong>funcionalidad</strong>, la <strong>optimización correcta</strong> para las búsquedas
+                        entre
+                        otras grandes cualidades.
+                    </p>
+
+                    <p class="blockquote-footer esloganWeb">
+                        Soluciones simples a problemas complejos.
+                    </p>
+
+                </div>
+            </div>
+            <div class="imgServices">
+                <img src="../img/diseñoWeb.jpg" alt="Imagen Diseño Web">
+            </div>
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+
+            <div class="imgServices">
+                <img src="../img/host.jpg" alt="Imagen Host">
+            </div>
+
+            <div class=" me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden servicios">
+                <div class="my-3 py-3">
+                    <h2 class="display-4">Dominios y hospedaje</h2>
+                    <p>Tramito registros de dominios y hospedajes, ofreción una completa gama de opciones y soluciones.
+                        Acompañado de asesoramiento y soporte personalizado con el cliente.</p>
+                    <p class="blockquote-footer esloganWeb">
+                        Con rapidez. Con decisión. Con entusiasmo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+            <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden servicios">
+                <div class="my-4 py-3">
+                    <h2 class="display-4">Mantenimiento de servidores web</h2>
+                    <p>El servicio de mantenimiento de servidores es la mejor manera de mantener siempre tu página
+                        actualizada con las últimas tecnologías para que sea estable, rápida y segura.</p>
+                    <ul>
+                        <li>Copias de archivos y base de datos, para evitar pérdidas de información</li>
+                        <li>Revisión de plugins y revisión de conflictos</li>
+                    </ul>
                     <br />
-
-                    Hay que destacar mi trato con el cliente que siempre es cercano, para así llegar a saber mejor que
-                    quiere el mismo concretamente. Además cuido especialmente el <strong>buen diseño</strong>, la
-                    <strong>funcionalidad</strong>, la <strong>optimización correcta</strong> para las búsquedas entre
-                    otras grandes cualidades.
-                </p>
-            
-                <p class="blockquote-footer esloganWeb">
-                    Soluciones simples a problemas complejos.
-                </p>
-             
+                    <p class="blockquote-footer esloganWeb">
+                        Cambios para mejor.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="imgServices">
-            <img src="../img/diseñoWeb.jpg" alt="Imagen Diseño Web">
-        </div>
-    </div>
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-
-        <div class="imgServices">
-            <img src="../img/host.jpg" alt="Imagen Host">
-        </div>
-
-        <div class=" me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden servicios">
-            <div class="my-3 py-3">
-                <h2 class="display-4">Dominios y hospedaje</h2>
-                <p>Tramito registros de dominios y hospedajes, ofreción una completa gama de opciones y soluciones.
-                    Acompañado de asesoramiento y soporte personalizado con el cliente.</p>
-                <p class="blockquote-footer esloganWeb">
-                    Con rapidez. Con decisión. Con entusiasmo.
-                </p>
+            <div class="imgServices">
+                <img src="../img/mantenimientoServidores.jpg" alt="Imagen Mantenimiento Servidores">
             </div>
-        </div>
-    </div>
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden servicios">
-            <div class="my-4 py-3">
-                <h2 class="display-4">Mantenimiento de servidores web</h2>
-                <p>El servicio de mantenimiento de servidores es la mejor manera de mantener siempre tu página
-                    actualizada con las últimas tecnologías para que sea estable, rápida y segura.</p>
-                <ul>
-                    <li>Copias de archivos y base de datos, para evitar pérdidas de información</li>
-                    <li>Revisión de plugins y revisión de conflictos</li>
-                </ul>
-                <br />
-                <p class="blockquote-footer esloganWeb">
-                    Cambios para mejor.
-                </p>
-            </div>
-        </div>
-        <div class="imgServices">
-            <img src="../img/mantenimientoServidores.jpg" alt="Imagen Mantenimiento Servidores">
         </div>
     </div>
     <footer class="bg-light pt-5">
@@ -201,7 +205,7 @@
                         <!--Hay que tener cuidado con los tamanios-->
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51152.433596629155!2d-2.6569391499851838!3d36.74592059634113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd70701c1ac6a79f%3A0xf7091f15d97f0d61!2s04740%20Roquetas%20de%20Mar%2C%20Almer%C3%ADa!5e0!3m2!1ses!2ses!4v1644419024057!5m2!1ses!2ses"
-                            width="300rem" height="175rem" style="border-radius: 1rem;" allowfullscreen=""
+                            width="100%" height="100%" style="border-radius: 1rem;" allowfullscreen=""
                             loading="lazy"></iframe>
                     </p>
                 </div>
@@ -211,7 +215,7 @@
                         <!--Hay que tener cuidado con los tamanios-->
                         <a
                             href="javascript:window.open('https://gero6700.github.io/portalWeb/','','toolbar=yes');void 0"><img
-                                src="../img/qrcode_page.png" width="175rem" alt="QR" style="border-radius: 1rem;">
+                                src="../img/qrcode_page.png" width="50%" alt="QR" style="border-radius: 1rem;">
                         </a>
                     <p>
 
@@ -220,11 +224,15 @@
                 <div class="row aling-items-center footer">
                     <div class="col-md-7 col-lg-8">
                         <p>
-                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" id="licencia">Licencia Creative Commons Atribución-NoComercial-Compartir Igual 4.0 Internacional</a>
+                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+                                id="licencia">Licencia Creative Commons Atribución-NoComercial-Compartir Igual 4.0
+                                Internacional</a>
                             <strong class="text-warning">Gerónimo Donaire</strong>
-                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+                                    alt="Licencia Creative Commons" style="border-width:0"
+                                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
                             </a>
-                            <br /> 
+                            <br />
                         </p>
                     </div>
                     <div class="col-md-5 col-lg-4">
